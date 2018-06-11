@@ -8,7 +8,6 @@ body, html {
 	height: 100%;
 	margin: 5px 5px 5px 5px;
 	overflow-x: hidden;
-
 }
 
 @media screen and (orientation: portrait) and (max-width: 400px){
@@ -43,7 +42,6 @@ body, html {
 .hero-text h1 {
 	font-size: 75px;
 	text-shadow: 0 2px 0 #cccccc;
-
 }
 
 .hero-text p {
@@ -62,6 +60,7 @@ body, html {
 	background-color: #e6e6e6;
 	text-align: center;
 	cursor: pointer;
+	transition: background-color 2s ease-out;
 }
 
 .hero-text button:hover {
@@ -126,7 +125,6 @@ body, html {
 .navbar i{
 	color: #3b5998
 	font-size: 20x;
-	
 }
 
 .side-nav{
@@ -155,7 +153,7 @@ body, html {
 .side-nav a:hover{
   color:#fff;
 }
-s
+
 .side-nav .btn-close{
   position:absolute;
   top:0;
@@ -222,7 +220,6 @@ input[type="submit"] {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background-color: aqua;
-		
 	}
 	
 h3 {
@@ -261,10 +258,9 @@ h3 {
 /*********** FOOTER ***********/
 		
 	footer {
-    background-color: #999999;
+    background-color: #e6e6e6;
     position: relative;
     z-index: 1;
-
 }
 footer .splitter {
     background-color: #3b5998;
@@ -288,12 +284,12 @@ footer .splitter {
         transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
         transparent 75%, transparent);
 
-    -webkit-background-size: 50px 50px;
-    -moz-background-size: 50px 50px;
+   /* -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px; */
     background-size: 50px 50px;
     
-    -moz-box-shadow: 1px 1px 8px gray;
-    -webkit-box-shadow: 1px 1px 8px gray;
+   /* -moz-box-shadow: 1px 1px 8px gray;
+    -webkit-box-shadow: 1px 1px 8px gray; */
     box-shadow: 1px 1px 8px gray;
 
     height: 10px;
@@ -312,10 +308,9 @@ footer > ul li {
     float: left;
     padding: 0px 15px;
     width: 33.3%;
-
     box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
+  /*  -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box; */
 }
 	
 footer > ul li:first-child {
@@ -335,7 +330,7 @@ footer > ul li .icon {
 }
 	
 footer > ul li .text {
-    color: #e4e7e7;
+    color: black;
     font-size: 13px;
     line-height: 20px;
     margin-left: 105px;
@@ -344,7 +339,7 @@ footer > ul li .text {
 }
 	
 .text h4 {
-    color: #ffffff;
+    color: #4c5f67;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -354,7 +349,7 @@ footer > ul li .text {
     border-bottom: 1px dotted transparent;
     color: #3b5998;
     font-weight: bold;
-		text-decoration: none;
+		text-decoration: underline;
 }
 	
 .text a:hover {
@@ -390,10 +385,11 @@ footer .bar-wrap {
 .links a {
     color: #e4e7e7;
 		text-decoration: none;
+		font-size: 15px;
 }
 	
 .links a:hover {
-    color: #ffffff;
+    color: black;
 }
 	
 .social {
@@ -405,9 +401,10 @@ footer .bar-wrap {
 .social a {
     color: #e4e7e7;
     margin-left: 20px;
+		font-size: 15px;
 }
 .social a:hover {
-   border-color: #3b5998;
+   color: black;
 	 /*color: #3b5998;*/
 }
 	
@@ -418,6 +415,10 @@ footer .bar-wrap {
     vertical-align: middle;
 }
 
+/*.social a:hover  .icon {
+    transform: rotate(360deg);
+}*/
+	
 .social .info {
     display: inline-block;
     vertical-align: top;
@@ -433,7 +434,7 @@ footer .bar-wrap {
 	
 .copyright {
     color: #e4e7e7;
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 /* responsive rules */
@@ -471,3 +472,9 @@ footer .bar-wrap {
         margin-right:5px;
     }
 }
+	
+	@media screen and (min-width: 700px){
+		footer > .icon
+		float:none;
+		width:auto;
+	}
