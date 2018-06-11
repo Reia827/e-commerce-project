@@ -47,7 +47,7 @@ body, html {
 .hero-text p {
 	font-size: 25px;
 	font-weight: 500;
-	color: #3b5998;
+	color: darkgoldenrod;
 	text-shadow: 0 1px 0 #cccccc;
 }
 
@@ -335,11 +335,12 @@ footer > ul li .text {
     line-height: 20px;
     margin-left: 105px;
     position: relative;
-    text-align: justify;
+    text-align: left;
+		font-weight: 450;
 }
 	
 .text h4 {
-    color: #4c5f67;
+    color: darkgoldenrod;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
