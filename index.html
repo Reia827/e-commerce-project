@@ -7,6 +7,7 @@
 	
 	 <title>Winter Wear Warehouse</title>
 	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -52,7 +53,7 @@
     </nav>
 			
 			<div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
 				<a href="#">Home</a>
 				<a href="#">About</a>
 				<a href="#">Gloves</a>
@@ -196,25 +197,7 @@
     </div>
   </div>
 </div>
-			
-  <script src="js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-			
-  <script>
-    function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
-    }
-
-    function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
-  </script>
-			
-		<section id="mail-list">
+					<section id="mail-list">
 			<form>
        <label>Sign up for our mailing list:
           <input type="email" name="email">
@@ -237,7 +220,7 @@
                 </div>
             </li>
             <li>
-               <!-- <div class="icon" data-icon="a"></div> -->
+           
                 <div class="text">
                     <h4>Our Promise</h4>
                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium.<br>
@@ -245,7 +228,7 @@
                 </div>
             </li>
             <li>
-              <!--  <div class="icon" data-icon="s"></div> -->
+      
                 <div class="text">
                     <h4>Our Philanthropy</h4>
                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium.<br>
@@ -292,5 +275,22 @@
         </div>
     </footer>	
 </main>
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+			
+
 </body>
 </html>
